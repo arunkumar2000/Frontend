@@ -1,6 +1,13 @@
-@media screen and (min-width:1201px){
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+.card{
+    width: 16rem;
+}
 
-    .card{
-        width:10rem;
-    }
-    }
+
+
+.card img{
+    height: 200px;
+}
