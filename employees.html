@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+</head>
+<body>
+    
+    <script>
+        let employees = [
+
+            {id:101, name:"Sai", post:"Full Stack Developer", salary:300000,gender:"Male", age:22, city:"Tirunelveli", state:"TamilNadu"},
+            {id:102, name:"Arun", post:"Frontend Developer", salary:300000,gender:"Male", age:24, city:"Pondichery", state:"TamilNadu"},
+            {id:103, name:"Prasath", post:"Tester", salary:300000,gender:"Male", age:21, city:"Perambulur", state:"TamilNadu"},
+            {id:104, name:"Sankresan", post:"Backend Developer", salary:300000,gender:"Male", age:22, city:"Tanjavur", state:"TamilNadu"},
+            {id:105, name:"Karthik", post:"Tester", salary:300000,gender:"Male", age:22, city:"Chennai", state:"TamilNadu"},
+            {id:106, name:"Kishore", post:"Manager", salary:1000000,gender:"Male", age:35, city:"Pune", state:"Maharashtra"},
+            {id:107, name:"Aysha", post:"Full Stack Developer", salary:300000,gender:"Female", age:21, city:"Chennai", state:"TamilNadu"},
+            {id:108, name:"Ismael", post:"System Engineer", salary:300000,gender:"Male", age:22, city:"Salem", state:"TamilNadu"},
+            {id:109, name:"Vivek", post:"Tester", salary:1500000,gender:"Male", age:60, city:"Trichy", state:"TamilNadu"},
+            {id:110, name:"Nithya", post:"Full Stack Developer", salary:300000,gender:"Female", age:22, city:"Chennai", state:"TamilNadu"},
+
+        ];
+
+        for(let e of employees){
+            document.write(`Id:${e.id} Name:${e.name} Post:${e.post} Salary:${e.salary} Gender:${e.gender} Age:${e.age} City:${e.city} State:${e.state} <br>`);
+        }
+
+        document.write("<br>============================================================<br>")
+
+        for(let e of employees){
+            if(e.post==="Manager"){
+                document.write(`Id:${e.id} Name:${e.name} Post:${e.post} Salary:${e.salary} Gender:${e.gender} Age:${e.age} City:${e.city} State:${e.state} <br>`);
+            }
+            
+        }
+
+        document.write("<br>============================================================<br>")
+
+        for(let e of employees){
+            if(e.gender==="Female"){
+                document.write(`Id:${e.id} Name:${e.name} Post:${e.post} Salary:${e.salary} Gender:${e.gender} Age:${e.age} City:${e.city} State:${e.state} <br>`);
+            }
+            
+        }
+
+        document.write("<br>============================================================<br>")
+
+        for(let e of employees){
+            if(e.age>55){
+                document.write(`Id:${e.id} Name:${e.name} Post:${e.post} Salary:${e.salary} Gender:${e.gender} Age:${e.age} City:${e.city} State:${e.state} <br>`);
+            }
+            
+        }
+
+        document.write("<br>============================================================<br>")
+
+        for(let e of employees){
+            if(e.state==="TamilNadu"){
+                document.write(`Id:${e.id} Name:${e.name} Post:${e.post} Salary:${e.salary} Gender:${e.gender} Age:${e.age} City:${e.city} State:${e.state} <br>`);
+            }
+            
+        }
+
+  
+    </script>
+</body>
+</html>
